@@ -68,9 +68,9 @@ class ARCObject(dict):
         
     def __str__(self):
         rng = range(2 * len(self.range_))
-        template = '\t'.join(["{{{0}}}".format(x) for x in rng]) ## template form!
+        template = '\t'.join(["{{{0}}}".format(x) for x in rng])
         keys = sorted(self.keys())
-        list_ = [i for sl in [list(self[k]) for k in keys] for i in sl] ## flatten lists
+        list_ = [i for sl in [list(self[k]) for k in keys] for i in sl]
         ans = []
         ## align the negatives
         i = 0
