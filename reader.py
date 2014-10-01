@@ -49,7 +49,14 @@ class GenericReader(object):
 class ARCObject(dict):
     '''
     read first the comments in the get_arc method in the model class
-    str(model.get_arc(word)) 
+    the str method returns a long tab separated string of <size, density> tuples,
+    in which the first element is the neighbourhood size between two std devs and
+    the second the average similarity between the those words and the target.
+    
+    for example, if in get_arc you specify a range(-5, 10, 1) this returns a string
+    of 30 numbers: the first one is the number of words between 5 and 4 stdevs below the
+    mean and the second the average similarity between the target and those words.
+    The third is the number between 4 and 3 below the mean and so on.
     '''
     def __init__(self, name, range_, *args, **kwargs):
         self.name = name
