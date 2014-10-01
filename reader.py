@@ -127,7 +127,7 @@ class Model(object):
         
     def get_arc(self, word):
         '''
-        implements the neighbourhood size/density algorithm described in Alikaniotis (2014)
+        implements the neighbourhood size/density algorithm described in [1]
         
         the algorithm simply extends the proposal of Shaoul & Westbury (2006) by relativising
         the threshold for EACH word. That is, we simply ask if the potential neighbour stands
@@ -148,6 +148,8 @@ class Model(object):
         The number of stdevs above which a word is considered a neighbour, does not have to be
         explicitly set, the list_ variable reports the size and the density of the neighbourhood
         in predefined steps.
+        
+        [1] Alikaniotis D. (2014) Approximating semantic structures using high-dimensional lexical spaces
         '''
         list_ = np.arange(-5, 10, 1) ## range and step of reporting
         ans_list = ARCObject(word, list_)
