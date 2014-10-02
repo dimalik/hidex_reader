@@ -2,7 +2,7 @@ High-dimensional Space Python Wrapper
 ============
 
 A python interface for interacting with semantic space models of meaning.
-Offers out of the box support for HiDEx (Shaoul & Westbury 2006; 2010) and S-Space models (https://github.com/fozziethebeat/S-Space) and is easily extendable to any other |V| x |D| matrix.
+Offers out of the box support for HiDEx (Shaoul & Westbury 2006; 2010) (https://github.com/cyrus/high-dimensional-explorer/) and S-Space models (https://github.com/fozziethebeat/S-Space) and is easily extendable to any other |V| x |D| matrix.
 
 Initialise a model with e.g.:
 > model = HidexModel(PATH_TO_DICT, PATH_TO_GCM)
