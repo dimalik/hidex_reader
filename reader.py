@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Helper classes to load HiDEx (Shaoul & Westbury, 2006; 2010) and S-Space
 (https://github.com/fozziethebeat/S-Space) files into the Python interpreter.
