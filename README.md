@@ -1,4 +1,4 @@
-High-dimensional Space Python Explorer
+High-dimensional Space Python Wrapper
 ============
 
 A python interface for interacting with semantic space models of meaning.
