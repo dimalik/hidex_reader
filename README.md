@@ -1,4 +1,4 @@
-High-dimensional Space Python Reader
+High-dimensional Space Python Explorer
 ============
 
 A python interface for interacting with semantic space models of meaning.
